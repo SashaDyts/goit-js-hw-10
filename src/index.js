@@ -47,13 +47,11 @@ function markup(data) {
   if (data.length <= 10 && data.length > 1) {
     deleteAllMarkup();
     appendCountryListMarkup(data);
-    console.log(data);
   }
 
   if (data.length === 1) {
     const languages = Object.values(data[0].languages).join(', ');
     data[0].languages = languages;
-    console.log(data);
 
     deleteAllMarkup();
 
