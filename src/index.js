@@ -39,6 +39,7 @@ function onSearchElInput(evt) {
 
 function markup(data) {
   if (data.length > 10) {
+    deleteAllMarkup();
     return Notiflix.Notify.info(
       'Too many matches found. Please enter a more specific name.'
     );
